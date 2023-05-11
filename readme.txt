@@ -1,3 +1,5 @@
 Gracie's Hanger
 
-Check out my website!
+Hey there! Check out my website!
+
+Made by Josh Brunscheen
