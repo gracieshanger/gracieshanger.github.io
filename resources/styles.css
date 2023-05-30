@@ -65,7 +65,7 @@ p {
 }
 
 hr {
-    width: 99%;
+    width: 97%;
     border: 10px solid #506C64;
     margin-top: 20px;
 }
@@ -132,6 +132,15 @@ li:not(:first-child):before {
     }
 
     .info{
+        width: 50%;
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    #nav {
+        margin: auto;
         width: 50%;
     }
 }
