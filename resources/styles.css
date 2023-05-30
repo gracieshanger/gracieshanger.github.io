@@ -23,6 +23,7 @@ body {
 
 #brand {
     width: fit-content;
+    text-align: center;
     margin: auto;
     font-family: 'Tsukimi Rounded', sans-serif;
 }
@@ -32,6 +33,7 @@ img.shadow {
     height: 504px;
     display: block;
     margin: auto;
+    border-radius: 10px;
     box-shadow: 10px 10px 0px #061826;
     transition: box-shadow .3s ease-out;
 }
@@ -52,12 +54,12 @@ h2 {
     font-size: 40px;
 }
 
-a.links {
+/* a.links {
     display: block;
     margin: auto;
     margin-left: 20px;
     margin-top: 10px;
-}
+} */
 
 p {
     width: 100%;
@@ -68,6 +70,7 @@ hr {
     width: 97%;
     border: 10px solid #506C64;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 div {
@@ -75,6 +78,7 @@ div {
     box-shadow: 10px 10px 0px #061826;
     transition: box-shadow .3s ease-out;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 div:hover {
@@ -95,7 +99,7 @@ a {
 
 #nav {
     width: 99%;
-    height: 50px;
+    height: fit-content;
 }
 
 #design {
@@ -106,6 +110,8 @@ a {
 
 ul {
     text-align: center;
+    width: 99%;
+    padding-left: 0px;
 }
 
 li {
