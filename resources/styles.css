@@ -171,6 +171,13 @@ li:not(:first-child):before {
         width: 50%;
     }
 
+    #nav {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1055px) {
     #shop {
         width: 100%;
     }
@@ -190,11 +197,6 @@ li:not(:first-child):before {
         font-size: 40px;
         animation: slideFromLeft 1s 1s ease-out forwards;
     }
-
-    #nav {
-        margin: auto;
-        width: 50%;
-    }
 }
 
 @keyframes slideFromLeft {
@@ -207,6 +209,23 @@ li:not(:first-child):before {
         opacity: 1;
         transfor: translateX(-20px);
     }
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background:#d5c9c2;
+}
+
+::-webkit-scrollbar-thumb {
+    background:#506C64;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:#061826;
 }
 
 ::selection {
