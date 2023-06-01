@@ -28,6 +28,21 @@ body {
     font-family: 'Tsukimi Rounded', sans-serif;
 }
 
+#shop {
+    width: 80%;
+    display: block;
+    height: fit-content;
+    text-align: center;
+    background-color: #AC7B84;
+    color:#FEEFE5;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
 img.shadow {
     width: 378px;
     height: 504px;
@@ -85,6 +100,17 @@ div:hover {
     box-shadow: 15px 15px 0px #061826; 
 }
 
+section {
+    background-color: #506C64;
+    border-radius: 10px;
+    width: 95%;
+    height: fit-content;
+    color:#FEEFE5;
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding: 10px;
+}
+
 a {
     text-decoration: none;
     color:#FEEFE5;
@@ -121,7 +147,7 @@ li {
 }
 
 li:not(:first-child):before {
-    content: " | ";
+    content: "  |  ";
 }
 
 @media only screen and (min-width: 600px) {
@@ -145,9 +171,41 @@ li:not(:first-child):before {
         width: 50%;
     }
 
+    #shop {
+        width: 100%;
+    }
+
+    section {
+        opacity: 0;
+        position: absolute;
+        background-color: #506C64;
+        border-radius: 10px;
+        width: 20%;
+        height: fit-content;
+        color:#FEEFE5;
+        padding: 20px;
+        padding-left: 25px;
+        margin-top: 100px;
+        transform: translateX(-20px);
+        font-size: 40px;
+        animation: slideFromLeft 1s 1s ease-out forwards;
+    }
+
     #nav {
         margin: auto;
         width: 50%;
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    100% {
+        opacity: 1;
+        transfor: translateX(-20px);
     }
 }
 
