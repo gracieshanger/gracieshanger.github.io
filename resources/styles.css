@@ -44,7 +44,7 @@ body {
 }
 
 img.shadow {
-    width: 50%;
+    width: 90%;
     display: block;
     margin: auto;
     margin-top: 20px;
@@ -65,13 +65,11 @@ h1 {
 }
 
 h2 {
-    width: 100%;
+    width: 90%;
     margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     font-size: 40px;
-}
-
-p {
-    font-size: 20px;
 }
 
 /* a.links {
@@ -82,8 +80,11 @@ p {
 } */
 
 p {
-    width: 100%;
+    width: 90%;
+    font-size: 20px;
     margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 hr {
@@ -179,6 +180,10 @@ li:not(:first-child):before {
 
     #nav {
         margin: auto;
+        width: 50%;
+    }
+
+    img.shadow {
         width: 50%;
     }
 }
