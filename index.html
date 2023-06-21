@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- NOTE: If in the future more pages are added to the site, the cookies banner must get consent regardless of what page a user lands on. -->
+        <!-- This script makes sure cookies are not collected by default; to change this, the user must agree to cookies through the banner -->
+        <script>
+            window.dataLayer = windo.dataLayer || [];
+            function gtag{}{dataLayer.push(arguments);}
+
+            if (localStorage.getItem('consentMode') === null) {
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'analytics_storage': 'denied',
+                    'personalization_storage': 'denied',
+                    'functionality_storage': 'denied',
+                    'security_storage': 'denied'
+                });
+            } else {
+                gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')));
+            }
+        </script>
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -8,6 +26,14 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-5R29PHN');</script>
         <!-- End Google Tag Manager -->
+
+        <script>
+            function consentGranted() {
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted'
+                });
+            }
+        </script>
 
         <title>Gracie's Hanger</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +55,7 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R29PHN"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        
+
         <!-- promotional -->
         <section>
             Get 15% off your purchase from my Poshmark closet when you buy two or more items!
@@ -52,7 +78,7 @@
         <div id="cookies">
             <p>This website uses cookies. Gracie's Hanger uses Google Analytics to keep track of traffic data. These cookies help support Gracie's Hanger. Refer to Google for more information. Continued use of this website indicates you agree to cookies being collected. Please indicate your cookie preferences below.</p>
             <div id="actions">
-                <button id="accept" onclick="document.getElementById('cookies').style.display = 'none';">Accept</button>
+                <button id="accept" onclick="consentGranted(); document.getElementById('cookies').style.display = 'none';">Accept</button>
                 <!-- <button id="decline" onclick="document.getElementById('cookies').style.display = 'none';">Decline</button>  -->
             </div>
         </div>
