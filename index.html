@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lan="en">
     <head>
         <!-- NOTE: If in the future more pages are added to the site, the cookies banner must get consent regardless of what page a user lands on. -->
         <!-- This script makes sure cookies are not collected by default; to change this, the user must agree to cookies through the banner -->
@@ -28,16 +28,6 @@
         })(window,document,'script','dataLayer','GTM-5R29PHN');</script>
         <!-- End Google Tag Manager -->
 
-        <script>
-            function consentGranted() {
-                gtag('consent', 'update', {
-                    'analytics_storage': 'granted'
-                });
-
-                document.getElementById('cookies').style.display = 'none';
-            }
-        </script>
-
         <title>Gracie's Hanger</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -54,6 +44,16 @@
         <meta name="keywords" content="Poshmark,thrifting,business,clothing">
     </head>
     <body>
+        <script>
+            function consentGranted() {
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted'
+                });
+
+                document.getElementById('cookies').style.display = 'none';
+            }
+        </script>
+        
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R29PHN"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -104,6 +104,6 @@
         <h2 id="resources">Resources</h2>
         <p>Use my free downloads below for more tips!</p>
         <a class="resource" href="resources/RetailArbitrageTips - Gracie's Hanger.pdf" download>Tips for Retail Arbitrage</a>
-        <img id="design" src="resources/design.svg" width="333" height="326">
+        <img id="design" src="resources/design.svg" width="333" height="326" alt="a simple circle and a square design">
     </body>
 </html>
