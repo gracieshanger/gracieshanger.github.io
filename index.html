@@ -44,16 +44,6 @@
         <meta name="keywords" content="Poshmark,thrifting,business,clothing">
     </head>
     <body>
-        <script>
-            function consentGranted() {
-                gtag('consent', 'update', {
-                    'analytics_storage': 'granted'
-                });
-
-                
-            }
-        </script>
-
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R29PHN"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -81,7 +71,7 @@
         <div id="cookies">
             <p>This website uses cookies. Gracie's Hanger uses Google Analytics to keep track of traffic data. These cookies help support Gracie's Hanger. Refer to Google for more information. Continued use of this website indicates you agree to cookies being collected. Please indicate your cookie preferences below.</p>
             <div id="actions">
-                <button id="accept" onclick="document.getElementById('cookies').style.display = 'none';">Accept</button>
+                <button id="accept" onclick="document.getElementById('cookies').style.display = 'none'; gtag('consent', 'update', {'analytics_storage': 'granted'});">Accept</button>
                 <!-- <button id="decline" onclick="document.getElementById('cookies').style.display = 'none';">Decline</button>  -->
             </div>
         </div>
