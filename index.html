@@ -4,7 +4,7 @@
         <!-- NOTE: If in the future more pages are added to the site, the cookies banner must get consent regardless of what page a user lands on. -->
         <!-- This script makes sure cookies are not collected by default; to change this, the user must agree to cookies through the banner -->
         <script>
-            window.dataLayer = windo.dataLayer || [];
+            window.dataLayer = window.dataLayer || [];
             function gtag{}{dataLayer.push(arguments);}
 
             if (localStorage.getItem('consentMode') === null) {
