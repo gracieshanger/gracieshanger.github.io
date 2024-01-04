@@ -1,33 +1,6 @@
 <!DOCTYPE html>
 <html lan="en">
     <head>
-        <!-- NOTE: If in the future more pages are added to the site, the cookies banner must get consent regardless of what page a user lands on. -->
-        <!-- This script makes sure cookies are not collected by default; to change this, the user must agree to cookies through the banner -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-
-            if (localStorage.getItem('consentMode') === null) {
-                gtag('consent', 'default', {
-                    'ad_storage': 'denied',
-                    'analytics_storage': 'denied',
-                    'personalization_storage': 'denied',
-                    'functionality_storage': 'denied',
-                    'security_storage': 'denied'
-                });
-            } else {
-                gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')));
-            }
-        </script>
-
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5R29PHN');</script>
-        <!-- End Google Tag Manager -->
-
         <title>Gracie's Hanger</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -35,27 +8,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@700&display=swap" rel="stylesheet"> -->
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->  
         <link rel="stylesheet" href="resources/styles.css">  
         <link rel="icon" type="image/x-icon" href="resources/favicon.png">
+
         <!-- SEO -->
         <meta name="description" content="Reselling consignment small business shop. Learn how to sell thrifted and second-hand clothing.">
         <meta name="keywords" content="Poshmark,thrifting,business,clothing">
     </head>
     <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R29PHN"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-
         <!-- promotional -->
         <section>
             Get 15% off your purchase from my Poshmark closet when you buy two or more items!
             <a id="shop" href=http://www.poshmark.com/closet/gracieshanger>SHOP MY CLOSET</a>
         </section>
+
         <!-- logo -->
         <img id="logo" src = "resources/GHLogo.svg" alt="Gracie's Hanger Logo"/>
+
         <!-- brand -->
         <h1 id="brand">GRACIE'S HANGER</h1> 
         
@@ -68,14 +37,6 @@
             </ul>
         </div>  
 
-        <!-- cookie footer -->
-        <div id="cookies">
-            <p>This website uses cookies. Gracie's Hanger uses Google Analytics to keep track of traffic data. These cookies help support Gracie's Hanger. Continuing to use this website indicates you agree to having this data be collected from you. Refer to Google for more information. Please indicate if you accept this website using cookies below.</p>
-            <div id="actions">
-                <button id="accept" onclick="document.getElementById('cookies').style.display = 'none'; gtag('consent', 'update', {'analytics_storage': 'granted'});">Accept</button>
-                <button id="decline" onclick="document.getElementById('cookies').style.display = 'none';">Decline</button> 
-            </div>
-        </div>
 
         <!-- intro -->
         <h2>I'm a part-time reseller, full time teacher, and entrepreneur who teaches ways to source highly coveted and hand-selected clothing.</h2>
